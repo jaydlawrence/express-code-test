@@ -28,9 +28,17 @@ I would feel more comfortable to have the frontend POST the user object (without
 ### 50% failure rate
 
 I am also not sure of the purpose of making the post fail, other than forcing the person taking the test to handle errors.
+
+
 But then the endpoint tests are going to fail half of the time. So I am probably missing part of the purpose of this requirement.
 
-I did think about writing unit tests just around the model and swapping out the fake DB that was causing the error for a mocked DB, but the instructions say "for all endpoints", so that makes me think that full endpoint tests are wanted, although that is not strictly what a "unit" test is.
+I wrote them anyway in this state, just to cover my bases.
+
+### Unit tests
+
+I am not sure if the brief wants end to end tests or unit tests.
+
+So I added model unit tests as well.
 
 
 

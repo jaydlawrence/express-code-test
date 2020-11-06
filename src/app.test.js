@@ -4,6 +4,8 @@ const { isUuid, uuid } = require('uuidv4');
 const request = supertest(app);
 
 
+// END TO END TESTS
+
 it("GET ID returns UUID", async () => {
   const response = await request.get("/id");
   expect(response.statusCode).toBe(200);
